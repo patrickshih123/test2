@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>logo_icon.png">
+
+ 
+    <title>Gliacloud Frontend Test</title>
+    
+    <style>
+   #timerContainer {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 300;
+      width:700px;
+      margin:20px auto;
+      min-height: 60px;
+      border-top:0px;
+    }
+    .timer, .reset {
+      float:left;
+      width: 54%;
+      padding: 20px 0;
+      font-size: 24px;
+      text-align:center;
+      color: #fff;
+      background: #A90000;
+      cursor: pointer
+    }
+    .reset {
+      background: #550000;
+      color: white;
+      width:14.9%;
+      border-left: 1px solid #990000;
+    }
+    .reset:hover {
+      background: #CC0000;
+    }
+    .lighter {
+      background: #CC0000
+    }
+
+#answer{
+  color:red;
+  font-size: 500;
+  font-size:20px;
+}
+    #result{
+
+
+color:red;
+font-size: 20px;
+font-size: 500;
+
+    }
+
+    </style>
+
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but frontend-test doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+
+
+  <div id="timerContainer">
+    <div class="timer">TIMER</div>
+    <div class="startTimer reset" onclick="startTimer()" >START
+      <i class="fas fa-play"></i>
+    </div>
+    <div class="pauseTimer reset" onclick="pauseTimer()" >PAUSE
+      <i class="fas fa-pause"></i>
+    </div>
+    <div class="resetTimer reset" onclick="resetTimer()">RESET</div>
+  </div>
+ 
+
+
+
+    <div id="multiples">
+      <h1>Sum of multiples</h1>
+      <label>Sum of multiples of 3 and 5 below 1000: </label>
+      <input type="number" readonly>
+       <h1 id='answer'>The answer is</h1>
+      <p id='result'></p>
+
+    </div>
+
+    <div id="integration">
+      <h1>Integration</h1>
+      <label>Integrate x<sup>2</sup>+1 from 0 to 10: </label>
+      <input type="number" readonly>
+      
+    </div>
+
+    <div id="event-loop">
+      <h1>Event Loop</h1>
+      <label>Async runner output:</label>
+      <pre></pre>
+    </div>
+
+    <div id="volume-bar">
+      <h1>Volume Bar</h1>
+      <div></div>
+    </div>
+
+    <div id="swinging-boxes">
+      <h1>Swinging Boxes</h1>
+      <div></div>
+    </div>
+    <script type="text/javascript" src="1-timer.js"></script>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
+
+
